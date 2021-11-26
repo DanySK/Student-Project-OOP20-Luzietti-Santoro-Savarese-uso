@@ -9,6 +9,7 @@ plugins {
     id("de.aaschmid.cpd")
     id("com.github.spotbugs")
     `build-dashboard`
+    id("com.github.johnrengelman.shadow") version "6.1.0"
 }
 
 repositories {
@@ -26,7 +27,7 @@ val javaFXModules = listOf(
 
 val supportedPlatforms = listOf("linux", "mac", "win") // All required for OOP
 
-val javaFxVersion = "15.0.1"
+val javaFxVersion = "17.0.1"
 
 val jUnitVersion = "5.7.1"
 
